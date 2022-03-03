@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    align-items: center;
+    background-color: #efeeee;
+    padding-bottom: 100px;
+}
+
+header > p {
+    max-width: 60%;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section > div {
+    background-color: #dbdad9;
+    border-radius: 16px;
+    border-color: #9e9c9c;
+    border-style: solid;
+    padding: 8px;
+    margin: 16px;
+    margin-top: -60px;
+    text-align: center;
+}
+
+section > div > h3 {
+    padding-top: 16px;
+}
+
+section > div > p {
+    padding-bottom: 16px;
+}
+
+section > div:first-child {
+    margin-left: 32px;
+}
+
+section > div:last-child {
+    margin-right: 32px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 24px;
+}
+
+.empty {
+    padding: 1px 16px;
+}
+
+article:nth-child(odd) {
+    grid-template-areas:
+        'background text';
+}
+
+article:nth-child(even) {
+    grid-template-areas:
+        'text background';
+}
+
+.background {
+    grid-area: background;
+    background-color: #efeeee;
+    height: 100%;
+    margin: 8px 8px;
+}
+
+.article-text {
+    grid-area: text;
+    padding: 8px 8px;
+    margin: 8px 8px;
+}
+
+@media screen and (max-width: 650px) {
+    section {
+        flex-direction: column;
+    }
+
+    section > div:not(:first-child) {
+        margin-top: 0px;
+    }
+
+    section > div:first-child {
+        margin-left: 16px;
+    }
+    
+    section > div:last-child {
+        margin-right: 16px;
+    }
+
+    article {
+        grid-template-columns: 100%;
+    }
+
+    article:nth-child(odd) {
+        grid-template-areas:
+            'background'
+            'text';
+    }
+    
+    article:nth-child(even) {
+        grid-template-areas:
+            'background'
+            'text';
+    }
+    
+    .background {
+        height: 30.0vw;
+        max-height: 150px;
+        margin: 0 0;
+    }
+
+    .article-text {
+        grid-area: text;
+        padding: 0 0;
+        margin: 0 0;
+    }
+}

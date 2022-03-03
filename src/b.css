@@ -55,10 +55,6 @@ article {
     padding: 24px;
 }
 
-.empty {
-    padding: 1px 16px;
-}
-
 article:nth-child(odd) {
     grid-template-areas:
         'background text';

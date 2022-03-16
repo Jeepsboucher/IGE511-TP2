@@ -1,5 +1,14 @@
 # IGE511-TP2
+# Équipe : 
 
+    Jean-Philippe Boucher bouj2362 - 19 125 046
+    Cromwell Dimo Kouesso dimc1001 - 18 216 967
+    Félix Lepinoy lepf0601 - 21 171 955
+    Trésor Mbuyamba Kadima kadt2001 - 18 001 234
+    Seydina Mohamed Sy syxs2601 - 19 014 558
+    Esther Mussot muse2701 - 21 166 747
+
+# Comment "start" le projet
 ## Commencer par installer npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 J'ai personnellement utilisé nvm sur Windows afin d'installer node.js et npm en même temps. Faire la commande `npm install -g npm` pour avoir la dernière version de npm.
 

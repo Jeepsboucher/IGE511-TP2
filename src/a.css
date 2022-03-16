@@ -2,14 +2,14 @@
     display: grid;
     grid-template-areas: 
         'header header'
-        'article grid-side'
+        'article aside'
         'footer footer';
 }
 
-.grid-side {
+aside {
     padding-left: 8px;
     padding-right: 16px;
-    grid-area: grid-side;
+    grid-area: aside;
     display: grid;
     align-content: flex-start;
     grid-template-areas: 
@@ -140,12 +140,12 @@ footer {
         display: grid;
         grid-template-areas: 
             'header'
-            'grid-side'
+            'aside'
             'article'
             'footer';
     }
 
-    .grid-side {
+    aside {
         padding: 0;
         padding-bottom: 24px;
     }
